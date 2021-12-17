@@ -1,61 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-   
-    .c1{
-     background-color:hsl(215, 51%, 70%) ;
-   }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
 
-   .c2{
-    color:hsl(178, 100%, 50%) ;
-   }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
 
-   .c3{
-     background-color:hsl(217, 54%, 11%) ;
-   }
-   .c4{
-     background-color: hsl(216, 50%, 16%) ;
-   }
-   .c5{
-    color:hsl(215, 32%, 27%) ;
-   }
-   .c6{
-     background-color: hsl(0, 0%, 100%) ;
-   }
+    .c1 {
+      background-color: hsl(215, 51%, 70%);
+    }
 
+    .c2 {
+      color: hsl(178, 100%, 50%);
+    }
 
+    .c3 {
+      background-color: hsl(217, 54%, 11%);
+    }
 
- 
+    .c4 {
+      background-color: hsl(216, 50%, 16%);
+    }
 
+    .c5 {
+      color: hsl(215, 32%, 27%);
+    }
 
- 
-
- 
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- </style>
+    .c6 {
+      background-color: hsl(0, 0%, 100%);
+    }
+  </style>
 
 
 
@@ -63,59 +52,79 @@
 
 
 
- <!-- Tailwind CSS CDN -->
+  <!-- Tailwind CSS CDN -->
 
- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+
 </head>
 
-<body>
-<div class=" flex justify-center items-center h-screen w-full c3 ">
-
-<div class="justify-center items-center h=full w-80 c4 p-5 space-y-5"> 
-<div> <img src="./images/image-equilibrium.jpg" alt="">  </div>
-<div> <h1 class="text-white"> Equilibrium #3429 </h1>  </div>
 
 
 
-<div><p class="text-gray-400">  Our Equilibrium collection promotes balance and calm. </p></div>
-<div class="flex flex-row space-x-28 items-center justify-center"> 
-
-  <div class="flex items-center" > 
-    <div> <img src="./images/icon-ethereum.svg" alt=""></div>
-  <div class="c2 font-bold "> 0.041 ETH</div>
-</div>
 
 
 
-  <div class="text-gray-400"> 3 days left</div>
- 
- 
+<body style="font-family: 'Outfit', sans-serif;">
+  <div class=" flex justify-center items-center h-screen w-full c3 ">
 
-
-</div>
-
-
-
-<div class="flex items-center  text-center space-x-5"> 
-
-  <div class="h-11 w-11"> <img src="./images/image-avatar.png" alt=""></div>
-<div class="text-gray-400">  Creation of <span class="hover:text-red-500"> Jules Wyvern</span> </div>
-
-</div>
+    <div class="justify-center items-center h=full w-80 c4 p-5 space-y-5 rounded-2xl">
+      <div> <img src="./images/image-equilibrium.jpg" alt="" class="rounded-xl  hover:opacity-70 "> </div>
+      <div>
+        <h1 class="text-white text-xl font-bold"> Equilibrium #3429 </h1>
+      </div>
 
 
 
-</div>
+      <div>
+        <p class="text-gray-400"> Our Equilibrium collection promotes balance and calm. </p>
+      </div>
+      <div class="flex flex-row space-x-20 items-center justify-center  pb-8">
+
+        <div class="flex items-center space-x-2 ">
+          <div> <img src="./images/icon-ethereum.svg" alt=""></div>
+          <div class="c2 font-bold "> 0.041 ETH</div>
+        </div>
+
+        <div class="flex items-center space-x-2">
+
+          <div><img src="./images/icon-clock.svg" alt=""></div>
+
+          <div class="text-gray-400"> 3 days left</div>
+        </div>
 
 
 
-</div>
- 
+      </div>
 
- 
+      <hr class="w-full px-8 my-4">
+
+      <div class="flex items-center  text-center space-x-5">
+
+        <div class="h-11 w-11"> <img src="./images/image-avatar.png" alt="" class="border rounded-full"></div>
+
+        <div class="text-gray-400"> Creation of  <a href="#" class="text-white hover:text-gray-300 ">Jules Wyvern</a> </div>
+
+      </div>
 
 
-  
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
 
 
 
@@ -130,5 +139,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-</body> 
+</body>
+
 </html>
